@@ -40,5 +40,5 @@ app.use((err, req, res, next) => {    // see express-jwt docs
   if (err.name === 'UnauthorizedError') res.status(401).json({error: 'Unauthorized!'});
 });
 
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 8080;
 app.listen(port, () => console.log(`RD03-02-NodeAPI listening on port ${port}...`));
