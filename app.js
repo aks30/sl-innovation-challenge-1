@@ -8,7 +8,7 @@ dotenv.config();
 const express = require('express');
 const app = express();
 // const cookieParser = require('cookie-parser');
-const expressValidator = require('express-validator');
+// const expressValidator = require('express-validator');
 
 // MongoDB Atlas
 const mongoose = require('mongoose');
@@ -24,7 +24,7 @@ const mongoose = require('mongoose');
 // app.use(cors());
 app.use(express.json());
 // app.use(cookieParser());
-app.use(expressValidator());
+// app.use(expressValidator());
 
 // routes
 app.get('/', (req, res) => res.json(require('./docs/api')));  // localhost:8080/
