@@ -7,7 +7,7 @@ dotenv.config();
 // Express
 const express = require('express');
 const app = express();
-const cookieParser = require('cookie-parser');
+// const cookieParser = require('cookie-parser');
 const expressValidator = require('express-validator');
 
 // MongoDB Atlas
@@ -23,7 +23,7 @@ mongoose.connect(process.env.MONGO_URI, {
 // middlewares
 app.use(cors());
 app.use(express.json());
-app.use(cookieParser());
+// app.use(cookieParser());
 app.use(expressValidator());
 
 // routes
