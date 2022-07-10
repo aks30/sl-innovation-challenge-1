@@ -1,4 +1,4 @@
-const cors = require('cors');
+// const cors = require('cors');
 
 // .env
 const dotenv = require('dotenv');
@@ -12,13 +12,13 @@ const expressValidator = require('express-validator');
 
 // MongoDB Atlas
 const mongoose = require('mongoose');
-mongoose.connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false
-  })
-  .then(() => console.log('Connected to DB...'))
-  .catch(err => console.log(`DB Error: ${err.message}`));
+// mongoose.connect(process.env.MONGO_URI, {
+//     useNewUrlParser: true,
+//     useCreateIndex: true,
+//     useFindAndModify: false
+//   })
+//   .then(() => console.log('Connected to DB...'))
+//   .catch(err => console.log(`DB Error: ${err.message}`));
 
 // middlewares
 // app.use(cors());
