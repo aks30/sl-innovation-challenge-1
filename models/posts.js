@@ -6,6 +6,7 @@ module.exports = {
       claps : Array,
       comments : Array,
       text : String,
-      userId : String
+      userId : String,
+      rawInformation : Object
     }
   };
